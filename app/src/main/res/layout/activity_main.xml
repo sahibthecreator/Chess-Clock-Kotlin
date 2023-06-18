@@ -9,6 +9,122 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/timeSettingsMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2D1E3E"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/selectTimeFrameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="105dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Select Time Frame"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="7dp"
+            android:text="5 minutes"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="7dp"
+            android:text="30 seconds"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectTimeFrameText" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="7dp"
+            android:text="1 minute"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="7dp"
+            android:text="7 minutes"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/saveTimeBtn"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="49dp"
+            android:text="Save"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -30,6 +146,7 @@
             android:layout_marginStart="145dp"
             android:layout_marginTop="140dp"
             android:layout_marginEnd="146dp"
+            android:fontFamily="sans-serif-black"
             android:rotation="180"
             android:text="10:00"
             android:textColor="#FFFFFF"
@@ -37,6 +154,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pressToStartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="103dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Press to start"
+            android:textColor="#FBFBFB"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -64,6 +196,7 @@
             android:layout_marginStart="145dp"
             android:layout_marginTop="144dp"
             android:layout_marginEnd="146dp"
+            android:fontFamily="sans-serif-black"
             android:text="10:00"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -71,6 +204,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/changePlayer1Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="136dp"
+            android:backgroundTint="#34FFFFFF"
+            android:text="Change Time"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/view1"
+            app:layout_constraintTop_toTopOf="@+id/view1" />
+
+        <ImageView
+            android:id="@+id/restartBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/view1"
+            app:layout_constraintTop_toTopOf="@+id/view1"
+            app:srcCompat="@mipmap/icon" />
 
         <!--        <LinearLayout-->
 <!--            android:layout_width="250dp"-->
@@ -92,78 +247,6 @@
 <!--                android:inputType="numberSigned"-->
 <!--                android:text="10" />-->
 <!--        </LinearLayout>-->
-
-        <Button
-            android:id="@+id/changePlayer1Time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="139dp"
-            android:layout_marginEnd="139dp"
-            android:layout_marginBottom="96dp"
-            android:backgroundTint="#34FFFFFF"
-            android:text="Change Time"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/view1"
-            app:layout_constraintEnd_toEndOf="@+id/view1"
-            app:layout_constraintStart_toStartOf="@+id/view1" />
-
-        <LinearLayout
-            android:id="@+id/timePickerPlayer1"
-            android:layout_width="158dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="61dp"
-            android:layout_marginEnd="61dp"
-            android:layout_marginBottom="286dp"
-            android:background="#FFFFFF"
-            android:backgroundTint="#5CFAF8F8"
-            android:orientation="horizontal"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@+id/view1"
-            app:layout_constraintEnd_toEndOf="@+id/view1"
-            app:layout_constraintStart_toStartOf="@+id/view1">
-
-            <EditText
-                android:id="@+id/etHours"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="0"
-                android:inputType="number"
-                android:singleLine="false"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=":"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/etMinutes"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="0"
-                android:inputType="number"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=":"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/etSeconds"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="0"
-                android:inputType="number"
-                android:textSize="16sp" />
-
-        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
