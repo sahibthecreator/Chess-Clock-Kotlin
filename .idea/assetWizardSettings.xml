@@ -25,6 +25,20 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/private/var/folders/vk/my9j69bj3hqcwj2hdyhf0k7h0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="opacityPercent" value="60" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/play-64.png" />
+                                                <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -52,6 +66,14 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/play-64.png" />
+                                      <entry key="outputName" value="resume_icon" />
+                                      <entry key="theme" value="HOLO_DARK" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -111,7 +133,6 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundLayerName" value="icon" />
                                       <entry key="outputName" value="restart_icon" />
                                     </map>
                                   </option>
@@ -130,6 +151,19 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/private/var/folders/vk/my9j69bj3hqcwj2hdyhf0k7h0000gn/T/ic_android_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/icon.png" />
+                                                <entry key="paddingPercent" value="5" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -157,6 +191,14 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/icon.png" />
+                                      <entry key="outputName" value="restart_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -281,6 +323,11 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
